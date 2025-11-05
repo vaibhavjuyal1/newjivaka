@@ -1,0 +1,327 @@
+/**
+ * Health Tracker Page Styles
+ */
+
+.health-tracker-page {
+  padding: 40px 0 80px;
+  min-height: calc(100vh - 200px);
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-header h1 {
+  font-size: 42px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.page-subtitle {
+  font-size: 18px;
+  color: #555;
+}
+
+.tracker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.tracker-section {
+  padding: 40px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.section-icon {
+  font-size: 40px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.section-description {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.tracker-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.input-hint {
+  font-size: 12px;
+  color: #888;
+  margin-top: -5px;
+}
+
+.result-box {
+  margin-top: 30px;
+  padding: 25px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  border-left: 4px solid #4CAF50;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.result-header h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.overall-status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status-normal {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-attention {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.bmi-display {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bmi-value {
+  font-size: 48px;
+  font-weight: 700;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.bmi-category {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.category-underweight {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.category-normal {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.category-overweight {
+  background: #fff3cd;
+  color: #f57c00;
+}
+
+.category-obese {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.result-suggestion {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.result-suggestion p {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.result-details {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  color: #888;
+}
+
+.vital-result {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border-left: 4px solid;
+}
+
+.vital-result.vital-normal {
+  border-left-color: #4CAF50;
+  background: #f1f8f4;
+}
+
+.vital-result.vital-low,
+.vital-result.vital-high,
+.vital-result.vital-elevated {
+  border-left-color: #ff9800;
+  background: #fff8e1;
+}
+
+.vital-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.vital-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.vital-status {
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.vital-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #4CAF50;
+  margin: 10px 0;
+}
+
+.vital-range {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.vital-message {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.result-suggestions {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+}
+
+.result-suggestions h4 {
+  font-size: 16px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.result-suggestions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.result-suggestions li {
+  padding: 8px 0;
+  color: #555;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 20px;
+}
+
+.result-suggestions li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.health-disclaimer {
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 20px;
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  border-radius: 8px;
+}
+
+.health-disclaimer p {
+  margin: 0;
+  font-size: 14px;
+  color: #856404;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 32px;
+  }
+
+  .tracker-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .tracker-section {
+    padding: 25px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .bmi-value {
+    font-size: 36px;
+  }
+
+  .vital-value {
+    font-size: 24px;
+  }
+}
+
